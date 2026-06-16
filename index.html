@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>런나우 | 지금 알아야 할 교육 정보</title>
+<meta name="description" content="입시 트렌드, 수능 일정, 교육 정책 변화를 매주 큐레이션합니다. 지금 바로 알아야 할 교육 정보 플랫폼.">
+<meta name="keywords" content="입시정보, 수능일정, 교육뉴스, 입시트렌드, 교육정책, 학원정보, 공부법">
+<link rel="canonical" href="https://learnow.kr/">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://learnow.kr/">
+<meta property="og:site_name" content="런나우">
+<meta property="og:title" content="런나우 | 지금 알아야 할 교육 정보">
+<meta property="og:description" content="입시 트렌드, 수능 일정, 교육 정책 변화를 매주 큐레이션합니다.">
+<meta property="og:image" content="https://learnow.kr/apple-touch-icon.png">
+<meta property="og:locale" content="ko_KR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+:root{
+  --green:#00C27A;
+  --green-d:#009E63;
+  --green-bg:#F0FDF7;
+  --slate:#0F1923;
+  --slate2:#1E2D3D;
+  --slate3:#2E3F52;
+  --text:#E8EDF2;
+  --text2:#8A9BB0;
+  --border:#2A3A4C;
+  --bg:#F7F9FB;
+  --surface:#FFFFFF;
+}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--slate);-webkit-font-smoothing:antialiased;overflow-x:hidden;word-break:keep-all}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:var(--slate);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1360px;margin:0 auto;padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo-img{width:28px;height:28px;border-radius:6px;object-fit:cover}
+.nav-logo-text{font-family:'Inter',sans-serif;font-size:18px;font-weight:800;letter-spacing:-0.03em;color:#fff}
+.nav-logo-text em{color:var(--green);font-style:normal}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--text2);text-decoration:none;transition:color 0.15s}
+.nav-links a:hover{color:var(--green)}
+.nav-badge{font-size:10px;font-weight:700;background:var(--green);color:var(--slate);padding:3px 9px;border-radius:20px;letter-spacing:0.06em}
+
+/* HERO — full-width editorial */
+.hero{background:var(--slate);padding:0;min-height:580px;display:grid;grid-template-columns:1fr;position:relative;overflow:hidden}
+@media(min-width:960px){.hero{grid-template-columns:1fr 420px;min-height:540px}}
+.hero-left{padding:72px 40px 64px;display:flex;flex-direction:column;justify-content:space-between;max-width:1360px;z-index:2;position:relative}
+.hero-right{background:var(--slate2);border-left:1px solid var(--border);padding:48px 40px;display:flex;flex-direction:column;justify-content:space-between}
+.hero-issue{display:inline-flex;align-items:center;gap:8px;margin-bottom:36px}
+.hero-issue-dot{width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0}
+.hero-issue-text{font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--green)}
+.hero-issue-num{font-size:11px;font-weight:500;color:var(--text2);letter-spacing:0.08em}
+.hero-title{font-family:'Noto Serif KR',serif;font-size:clamp(42px,6vw,80px);font-weight:900;letter-spacing:-0.03em;line-height:1.05;color:#fff;margin-bottom:28px}
+.hero-title .accent{color:var(--green)}
+.hero-lead{font-size:15px;color:var(--text2);line-height:1.85;max-width:520px;font-weight:400}
+.hero-divider{height:1px;background:var(--border);margin:40px 0}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px}
+.hero-tag{font-size:11px;font-weight:600;letter-spacing:0.06em;padding:6px 14px;border:1px solid var(--border);color:var(--text2);border-radius:4px}
+.hero-tag.active{border-color:var(--green);color:var(--green)}
+
+/* SIDE PANEL */
+.side-label{font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--text2);margin-bottom:20px}
+.side-item{padding:18px 0;border-bottom:1px solid var(--border)}
+.side-item:first-of-type{padding-top:0}
+.side-item:last-of-type{border-bottom:none}
+.si-cat{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+.si-title{font-family:'Noto Serif KR',serif;font-size:14px;font-weight:700;color:var(--text);line-height:1.45}
+.si-date{font-size:11px;color:var(--text2);margin-top:6px}
+
+/* CONTENT AREA */
+.content-wrap{max-width:1360px;margin:0 auto;padding:0 40px}
+
+/* SECTION HEADER */
+.sec-bar{display:flex;align-items:baseline;justify-content:space-between;padding:56px 0 28px;border-bottom:2px solid var(--slate)}
+.sec-bar-left{display:flex;align-items:baseline;gap:16px}
+.sec-cat{font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--green)}
+.sec-title{font-family:'Noto Serif KR',serif;font-size:clamp(22px,2.5vw,30px);font-weight:900;letter-spacing:-0.02em;color:var(--slate)}
+.sec-count{font-size:12px;color:#A0ADB8;letter-spacing:0.04em}
+
+/* FEATURE GRID */
+.feature-grid{display:grid;grid-template-columns:1fr;gap:0}
+@media(min-width:700px){.feature-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1100px){.feature-grid{grid-template-columns:2fr 1fr 1fr}}
+.fg-main{grid-row:span 2}
+.feat{border-right:1px solid #E2E8EE;border-bottom:1px solid #E2E8EE;padding:32px}
+.feat:nth-child(3n){border-right:none}
+@media(max-width:700px){.feat{border-right:none}}
+.feat-num{font-size:11px;font-weight:700;color:var(--green);letter-spacing:0.1em;margin-bottom:14px}
+.feat-cat{display:inline-block;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:var(--green-bg);color:var(--green-d);padding:3px 10px;border-radius:3px;margin-bottom:14px}
+.feat-title{font-family:'Noto Serif KR',serif;font-weight:700;letter-spacing:-0.02em;color:var(--slate);line-height:1.4;margin-bottom:12px}
+.fg-main .feat-title{font-size:clamp(20px,2.2vw,26px);margin-bottom:18px}
+.feat-sm .feat-title{font-size:15px}
+.feat-body{font-size:13px;color:#6B7A8D;line-height:1.75;margin-bottom:20px}
+.fg-main .feat-body{font-size:14px}
+.feat-meta{display:flex;align-items:center;gap:12px;font-size:11px;color:#A0ADB8}
+.feat-dot{width:3px;height:3px;border-radius:50%;background:#C0CAD6;flex-shrink:0}
+
+/* TIMELINE */
+.timeline{padding:40px 0}
+.tl-row{display:grid;grid-template-columns:100px 1fr;gap:0;border-top:1px solid #E2E8EE}
+.tl-row:last-child{border-bottom:1px solid #E2E8EE}
+.tl-date{padding:24px 24px 24px 0;border-right:1px solid #E2E8EE;font-size:11px;font-weight:700;color:#A0ADB8;letter-spacing:0.06em;line-height:1.6}
+.tl-date strong{display:block;font-size:20px;font-weight:800;letter-spacing:-0.03em;color:var(--slate);margin-bottom:2px}
+.tl-content{padding:24px 0 24px 28px;display:flex;flex-direction:column;gap:10px}
+.tl-item{display:flex;align-items:flex-start;gap:14px}
+.tl-badge{font-size:10px;font-weight:700;letter-spacing:0.06em;padding:3px 10px;border-radius:3px;flex-shrink:0;margin-top:1px}
+.tl-badge.exam{background:#FEF3C7;color:#92400E}
+.tl-badge.policy{background:#EDE9FE;color:#5B21B6}
+.tl-badge.trend{background:var(--green-bg);color:var(--green-d)}
+.tl-badge.tips{background:#FEE2E2;color:#991B1B}
+.tl-text{font-size:13px;color:var(--slate);line-height:1.6}
+.tl-text span{color:#7B8A9A;font-size:12px;margin-left:6px}
+
+/* STAT STRIP */
+.stat-strip{background:var(--slate);padding:52px 40px;margin-top:72px}
+.stat-inner{max-width:1360px;margin:0 auto}
+.stat-label{font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--green);margin-bottom:36px}
+.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border)}
+@media(min-width:640px){.stat-grid{grid-template-columns:repeat(4,1fr)}}
+.stat-cell{background:var(--slate);padding:32px 28px}
+.stat-num{font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-0.04em;color:#fff;line-height:1;margin-bottom:10px}
+.stat-num em{color:var(--green);font-style:normal}
+.stat-desc{font-size:11px;color:var(--text2);line-height:1.65;letter-spacing:0.02em}
+
+/* TOPICS */
+.topics{padding:56px 0}
+.topic-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(min-width:640px){.topic-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1000px){.topic-grid{grid-template-columns:repeat(5,1fr)}}
+.topic{border:1px solid #E2E8EE;border-radius:8px;padding:22px 18px;cursor:default}
+.topic-icon{font-size:24px;margin-bottom:12px;display:block}
+.topic-name{font-size:13px;font-weight:700;color:var(--slate);margin-bottom:4px}
+.topic-count{font-size:11px;color:#A0ADB8}
+.topic:hover{border-color:var(--green);background:var(--green-bg)}
+
+/* INDEX TABLE */
+.index-table{width:100%;border-collapse:collapse;margin-top:8px}
+.index-table th{padding:12px 16px;text-align:left;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A0ADB8;border-bottom:2px solid var(--slate)}
+.index-table td{padding:20px 16px;border-bottom:1px solid #E2E8EE;font-size:13px;color:var(--slate);vertical-align:top}
+.index-table tbody tr:last-child td{border-bottom:none}
+.it-title{font-family:'Noto Serif KR',serif;font-size:14px;font-weight:700;color:var(--slate);line-height:1.45;margin-bottom:4px}
+.it-sub{font-size:12px;color:#8A9BB0;line-height:1.5}
+.it-tag{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;letter-spacing:0.06em}
+.it-tag.hot{background:#FEE2E2;color:#991B1B}
+.it-tag.new{background:var(--green-bg);color:var(--green-d)}
+.it-tag.up{background:#EDE9FE;color:#5B21B6}
+.it-num{font-size:15px;font-weight:700;color:var(--slate)}
+.it-arrow{color:var(--green);font-size:12px;font-weight:700}
+
+/* FOOTER */
+footer{background:var(--slate);border-top:1px solid var(--border);padding:48px 40px 32px}
+.foot-inner{max-width:1360px;margin:0 auto}
+.foot-top{display:grid;grid-template-columns:1fr;gap:32px;margin-bottom:40px}
+@media(min-width:768px){.foot-top{grid-template-columns:2fr 1fr 1fr}}
+.f-logo{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.f-logo-img{width:24px;height:24px;border-radius:5px;object-fit:cover}
+.f-logo-text{font-size:18px;font-weight:800;letter-spacing:-0.03em;color:#fff}
+.f-logo-text em{color:var(--green);font-style:normal}
+.f-desc{font-size:12px;color:var(--text2);line-height:1.8;max-width:320px}
+.f-col-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text2);margin-bottom:14px}
+.f-col-item{display:block;font-size:12px;color:#4E6072;margin-bottom:8px}
+.foot-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.f-copy{font-size:11px;color:#3D5169;letter-spacing:0.02em}
+
+@media(max-width:640px){
+  .nav-links{display:none}
+  .nav-inner{padding:0 24px}
+  .hero-left{padding:52px 24px 44px}
+  .hero-right{padding:36px 24px;display:none}
+  .content-wrap{padding:0 24px}
+  .stat-strip{padding:44px 24px}
+  .feat{padding:24px}
+  footer{padding:40px 24px 24px}
+  .foot-bottom{flex-direction:column;align-items:flex-start}
+  .tl-row{grid-template-columns:72px 1fr}
+  .tl-date{padding:20px 16px 20px 0}
+  .tl-content{padding:20px 0 20px 20px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsMediaOrganization",
+  "@id": "https://learnow.kr/#organization",
+  "name": "런나우",
+  "alternateName": ["Learnow", "런나우 교육정보"],
+  "url": "https://learnow.kr",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://learnow.kr/apple-touch-icon.png",
+    "width": 180,
+    "height": 180
+  },
+  "image": "https://learnow.kr/apple-touch-icon.png",
+  "description": "입시 트렌드, 수능 일정, 교육 정책 변화를 큐레이션하는 교육 정보 플랫폼",
+  "areaServed": "대한민국",
+  "telephone": "010-3728-5190",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "서울특별시 강서구 화곡동 394",
+    "addressCountry": "KR"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://learnow.kr/#website",
+  "name": "런나우",
+  "alternateName": ["Learnow", "런나우 교육정보"],
+  "url": "https://learnow.kr",
+  "publisher": {
+    "@id": "https://learnow.kr/#organization"
+  },
+  "inLanguage": "ko-KR"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <div class="nav-logo-text">런<em>나우</em></div>
+    </div>
+    <div class="nav-links">
+      <a href="#">입시일정</a>
+      <a href="#">교육정책</a>
+      <a href="#">공부법</a>
+      <a href="#">트렌드</a>
+      <span class="nav-badge">WEEKLY</span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-left">
+    <div>
+      <div class="hero-issue">
+        <span class="hero-issue-dot"></span>
+        <span class="hero-issue-text">Education Briefing</span>
+        <span class="hero-issue-num">· 2026 Vol.24</span>
+      </div>
+      <h1 class="hero-title">지금 알아야 할<br><span class="accent">교육 정보</span>,<br>한눈에</h1>
+      <p class="hero-lead">수능 일정부터 교육 정책 변화, 학습 트렌드까지 — 매주 엄선한 교육 정보를 빠르게 전달합니다. 복잡한 입시 정보를 명확하게 정리해 드립니다.</p>
+    </div>
+    <div>
+      <div class="hero-divider"></div>
+      <div class="hero-tags">
+        <span class="hero-tag active"># 2027 수능</span>
+        <span class="hero-tag"># 내신 절대평가</span>
+        <span class="hero-tag"># AI 교육</span>
+        <span class="hero-tag"># 의대 정원</span>
+        <span class="hero-tag"># 논술 전형</span>
+        <span class="hero-tag"># SKY 입결</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="side-label">이번 주 주요 이슈</div>
+    <div>
+      <div class="side-item">
+        <div class="si-cat">수능 일정</div>
+        <div class="si-title">2027학년도 수능 시행 기본계획 발표 — 선택과목 구조 변경 핵심 정리</div>
+        <div class="si-date">2026.06.12</div>
+      </div>
+      <div class="side-item">
+        <div class="si-cat">교육 정책</div>
+        <div class="si-title">고교학점제 전면 시행 2년 차, 학원가 대응 현황 분석</div>
+        <div class="si-date">2026.06.10</div>
+      </div>
+      <div class="side-item">
+        <div class="si-cat">입시 트렌드</div>
+        <div class="si-title">의대 증원 이후 이과 최상위 학생 이동 패턴 변화</div>
+        <div class="si-date">2026.06.08</div>
+      </div>
+      <div class="side-item">
+        <div class="si-cat">공부법</div>
+        <div class="si-title">수능 D-150일, 과목별 막판 역전 전략 — 현장 강사 7인 의견</div>
+        <div class="si-date">2026.06.05</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURE ARTICLES -->
+<div class="content-wrap">
+  <div class="sec-bar">
+    <div class="sec-bar-left">
+      <span class="sec-cat">Feature</span>
+      <h2 class="sec-title">이번 주 심층 분석</h2>
+    </div>
+    <span class="sec-count">Vol.24 · 2026년 6월</span>
+  </div>
+  <div class="feature-grid">
+
+    <div class="feat fg-main">
+      <div class="feat-cat">커버스토리</div>
+      <h3 class="feat-title">2027 수능 개편안 완전 해부 — 국어·수학·탐구 어떻게 달라지나</h3>
+      <p class="feat-body">교육부가 발표한 2027학년도 수능 기본계획을 항목별로 분석합니다. 선택과목 구조 개편이 불러올 학원가 지형 변화와 수험생 전략 재편 방향을 현장 전문가 의견과 함께 심층적으로 다룹니다. 상위권 수험생일수록 과목 선택 전략이 더욱 중요해집니다.</p>
+      <div class="feat-meta">
+        <span>2026.06.14</span>
+        <span class="feat-dot"></span>
+        <span>수능 · 교육정책</span>
+        <span class="feat-dot"></span>
+        <span>읽는 시간 약 7분</span>
+      </div>
+    </div>
+
+    <div class="feat feat-sm">
+      <div class="feat-cat">입시 분석</div>
+      <h3 class="feat-title">서울대 2027 정시 비율, 역대 최고 전망</h3>
+      <p class="feat-body">정시 확대 기조가 이어지며 상위권 대학 입시 전략이 전면 재편될 가능성이 높습니다.</p>
+      <div class="feat-meta">
+        <span>2026.06.11</span>
+        <span class="feat-dot"></span>
+        <span>대입 전형</span>
+      </div>
+    </div>
+
+    <div class="feat feat-sm">
+      <div class="feat-cat">학원 트렌드</div>
+      <h3 class="feat-title">강남 대치동 수학 학원 수강료 3년간 37% 상승</h3>
+      <p class="feat-body">물가 대비 월등히 높은 수강료 상승률, 지역별 편차 데이터와 원인 분석.</p>
+      <div class="feat-meta">
+        <span>2026.06.09</span>
+        <span class="feat-dot"></span>
+        <span>수강료 · 지역</span>
+      </div>
+    </div>
+
+    <div class="feat feat-sm">
+      <div class="feat-cat">공부법</div>
+      <h3 class="feat-title">AI 튜터 도입 학원 vs 전통 방식 — 성적 향상률 비교 실험</h3>
+      <p class="feat-body">6개월 추적 연구 결과, 과목별 효과 차이가 뚜렷하게 나타났습니다.</p>
+      <div class="feat-meta">
+        <span>2026.06.07</span>
+        <span class="feat-dot"></span>
+        <span>AI교육 · 비교</span>
+      </div>
+    </div>
+
+    <div class="feat feat-sm">
+      <div class="feat-cat">정책 브리핑</div>
+      <h3 class="feat-title">교육부 사교육비 경감 대책 발표 — 학원가 반응과 실효성 점검</h3>
+      <p class="feat-body">5번째 경감 대책이 나왔습니다. 현장에서 실제로 달라지는 것은 무엇인지 살펴봅니다.</p>
+      <div class="feat-meta">
+        <span>2026.06.06</span>
+        <span class="feat-dot"></span>
+        <span>교육정책</span>
+      </div>
+    </div>
+
+    <div class="feat feat-sm">
+      <div class="feat-cat">진학 가이드</div>
+      <h3 class="feat-title">이과 최상위권 의대 지원 포기 현상 — 공대·약대로 선회하는 이유</h3>
+      <p class="feat-body">증원 이후 경쟁률이 치솟으며 최상위권 수험생들의 전략이 바뀌고 있습니다.</p>
+      <div class="feat-meta">
+        <span>2026.06.04</span>
+        <span class="feat-dot"></span>
+        <span>진학 · 의대</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- TIMELINE -->
+<div class="content-wrap">
+  <div class="sec-bar">
+    <div class="sec-bar-left">
+      <span class="sec-cat">Calendar</span>
+      <h2 class="sec-title">2026 하반기 입시 일정</h2>
+    </div>
+    <span class="sec-count">6월 — 11월</span>
+  </div>
+  <div class="timeline">
+    <div class="tl-row">
+      <div class="tl-date"><strong>06월</strong>2026</div>
+      <div class="tl-content">
+        <div class="tl-item">
+          <span class="tl-badge exam">시험</span>
+          <span class="tl-text">6월 모의평가 (수능 주관 기관 주최) <span>· 6월 3일 시행 완료</span></span>
+        </div>
+        <div class="tl-item">
+          <span class="tl-badge policy">정책</span>
+          <span class="tl-text">2027학년도 수능 기본계획 발표</span>
+        </div>
+        <div class="tl-item">
+          <span class="tl-badge trend">트렌드</span>
+          <span class="tl-text">수시 원서 접수 학원 설명회 집중 시기 돌입</span>
+        </div>
+      </div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-date"><strong>07월</strong>2026</div>
+      <div class="tl-content">
+        <div class="tl-item">
+          <span class="tl-badge exam">시험</span>
+          <span class="tl-text">고3 학교별 기말고사 <span>· 7월 첫째~둘째 주</span></span>
+        </div>
+        <div class="tl-item">
+          <span class="tl-badge tips">공부법</span>
+          <span class="tl-text">여름방학 집중 학습 시즌 시작 — 단기 성적 향상 골든타임</span>
+        </div>
+      </div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-date"><strong>09월</strong>2026</div>
+      <div class="tl-content">
+        <div class="tl-item">
+          <span class="tl-badge exam">시험</span>
+          <span class="tl-text">9월 모의평가 (수능 최종 리허설) <span>· 9월 초</span></span>
+        </div>
+        <div class="tl-item">
+          <span class="tl-badge policy">정책</span>
+          <span class="tl-text">2027학년도 대학별 수시 모집 요강 최종 확정</span>
+        </div>
+        <div class="tl-item">
+          <span class="tl-badge trend">트렌드</span>
+          <span class="tl-text">수시 원서 접수 시작 (9월 중순 ~ 말)</span>
+        </div>
+      </div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-date"><strong>11월</strong>2026</div>
+      <div class="tl-content">
+        <div class="tl-item">
+          <span class="tl-badge exam">시험</span>
+          <span class="tl-text">2027학년도 대학수학능력시험 <span>· 11월 19일(목) 예정</span></span>
+        </div>
+        <div class="tl-item">
+          <span class="tl-badge tips">공부법</span>
+          <span class="tl-text">수능 D-14 마무리 전략 집중 배포</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STAT STRIP -->
+<div class="stat-strip">
+  <div class="stat-inner">
+    <div class="stat-label">런나우 교육 데이터 · 2026 상반기 기준</div>
+    <div class="stat-grid">
+      <div class="stat-cell">
+        <div class="stat-num">3,847<em>건</em></div>
+        <div class="stat-desc">분석한 교육 뉴스<br>및 정책 문서 수</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">127<em>개</em></div>
+        <div class="stat-desc">현장 전문가<br>기고·인터뷰</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">52<em>호</em></div>
+        <div class="stat-desc">매주 발행한<br>교육 브리핑</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">94<em>%</em></div>
+        <div class="stat-desc">독자 만족도<br>(2026 상반기 조사)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOPICS -->
+<div class="content-wrap">
+  <div class="sec-bar">
+    <div class="sec-bar-left">
+      <span class="sec-cat">Topics</span>
+      <h2 class="sec-title">주제별 탐색</h2>
+    </div>
+    <span class="sec-count">10개 카테고리</span>
+  </div>
+  <div class="topics">
+    <div class="topic-grid">
+      <div class="topic">
+        <span class="topic-icon">📊</span>
+        <div class="topic-name">입시 분석</div>
+        <div class="topic-count">기사 284건</div>
+      </div>
+      <div class="topic">
+        <span class="topic-icon">📅</span>
+        <div class="topic-name">수능 일정</div>
+        <div class="topic-count">기사 146건</div>
+      </div>
+      <div class="topic">
+        <span class="topic-icon">🏛️</span>
+        <div class="topic-name">교육 정책</div>
+        <div class="topic-count">기사 312건</div>
+      </div>
+      <div class="topic">
+        <span class="topic-icon">✏️</span>
+        <div class="topic-name">공부법</div>
+        <div class="topic-count">기사 198건</div>
+      </div>
+      <div class="topic">
+        <span class="topic-icon">🏫</span>
+        <div class="topic-name">학원 트렌드</div>
+        <div class="topic-count">기사 221건</div>
+      </div>
+      <div class="topic">
+        <span class="topic-icon">🤖</span>
+        <div class="topic-name">AI 교육</div>
+        <div class="topic-count">기사 89건</div>
+      </div>
+      <div class="topic">
+        <span class="topic-icon">🎓</span>
+        <div class="topic-name">대학 입결</div>
+        <div class="topic-count">기사 174건</div>
+      </div>
+      <div class="topic">
+        <span class="topic-icon">💰</span>
+        <div class="topic-name">사교육비</div>
+        <div class="topic-count">기사 133건</div>
+      </div>
+      <div class="topic">
+        <span class="topic-icon">🌍</span>
+        <div class="topic-name">해외 교육</div>
+        <div class="topic-count">기사 67건</div>
+      </div>
+      <div class="topic">
+        <span class="topic-icon">📝</span>
+        <div class="topic-name">논술·면접</div>
+        <div class="topic-count">기사 109건</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INDEX TABLE -->
+<div class="content-wrap" style="padding-bottom:80px">
+  <div class="sec-bar">
+    <div class="sec-bar-left">
+      <span class="sec-cat">Index</span>
+      <h2 class="sec-title">주목받는 키워드</h2>
+    </div>
+    <span class="sec-count">이번 주 기준</span>
+  </div>
+  <div style="overflow-x:auto;margin-top:8px">
+    <table class="index-table">
+      <thead>
+        <tr>
+          <th>순위</th>
+          <th>키워드</th>
+          <th>분류</th>
+          <th>관심도</th>
+          <th>변동</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="it-num">1</span></td>
+          <td>
+            <div class="it-title">2027 수능 개편</div>
+            <div class="it-sub">선택과목 구조 개편, 영역별 배점 변화</div>
+          </td>
+          <td><span class="it-tag hot">HOT</span></td>
+          <td>98,402회 검색</td>
+          <td><span class="it-arrow">▲ 신규</span></td>
+        </tr>
+        <tr>
+          <td><span class="it-num">2</span></td>
+          <td>
+            <div class="it-title">의대 정원 확대 여파</div>
+            <div class="it-sub">이과 최상위권 입시 전략 재편</div>
+          </td>
+          <td><span class="it-tag hot">HOT</span></td>
+          <td>76,218회 검색</td>
+          <td><span class="it-arrow">▲ 3</span></td>
+        </tr>
+        <tr>
+          <td><span class="it-num">3</span></td>
+          <td>
+            <div class="it-title">고교학점제 2년 차</div>
+            <div class="it-sub">과목 선택 전략과 내신 관리법</div>
+          </td>
+          <td><span class="it-tag up">주목</span></td>
+          <td>54,833회 검색</td>
+          <td><span class="it-arrow">▲ 1</span></td>
+        </tr>
+        <tr>
+          <td><span class="it-num">4</span></td>
+          <td>
+            <div class="it-title">수능 D-150 학습 전략</div>
+            <div class="it-sub">과목별 최종 정리 로드맵</div>
+          </td>
+          <td><span class="it-tag new">NEW</span></td>
+          <td>48,190회 검색</td>
+          <td><span class="it-arrow">▲ 신규</span></td>
+        </tr>
+        <tr>
+          <td><span class="it-num">5</span></td>
+          <td>
+            <div class="it-title">AI 튜터 학습 효과</div>
+            <div class="it-sub">전통 학원 대비 성적 향상률 비교</div>
+          </td>
+          <td><span class="it-tag up">주목</span></td>
+          <td>38,024회 검색</td>
+          <td><span class="it-arrow">▲ 7</span></td>
+        </tr>
+        <tr>
+          <td><span class="it-num">6</span></td>
+          <td>
+            <div class="it-title">논술 전형 확대 대학</div>
+            <div class="it-sub">2027 논술 실시 대학 목록 및 비율</div>
+          </td>
+          <td><span class="it-tag new">NEW</span></td>
+          <td>29,447회 검색</td>
+          <td><span class="it-arrow">▲ 신규</span></td>
+        </tr>
+        <tr>
+          <td><span class="it-num">7</span></td>
+          <td>
+            <div class="it-title">사교육비 경감 대책</div>
+            <div class="it-sub">교육부 5차 발표 — 현장 실효성 분석</div>
+          </td>
+          <td><span class="it-tag hot">HOT</span></td>
+          <td>24,810회 검색</td>
+          <td><span class="it-arrow">— 0</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div>
+        <div class="f-logo">
+          <div class="f-logo-text">런<em>나우</em></div>
+        </div>
+        <p class="f-desc">입시 트렌드, 수능 일정, 교육 정책 변화를 매주 큐레이션합니다. 복잡한 교육 정보를 명확하게 정리해 드립니다.</p>
+      </div>
+      <div>
+        <div class="f-col-title">카테고리</div>
+        <span class="f-col-item">입시 분석</span>
+        <span class="f-col-item">수능 일정</span>
+        <span class="f-col-item">교육 정책</span>
+        <span class="f-col-item">공부법</span>
+      </div>
+      <div>
+        <div class="f-col-title">정보</div>
+        <span class="f-col-item">발행 주기: 매주 월요일</span>
+        <span class="f-col-item">연락처: 010-3728-5190</span>
+        <span class="f-col-item">aagta1111@gmail.com</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="f-copy">© 2026 런나우 · 교육 정보 큐레이션 플랫폼</span>
+      <span class="f-copy">Vol.24 · 2026년 6월 17일 발행</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
